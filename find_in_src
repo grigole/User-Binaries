@@ -1,0 +1,5 @@
+#!/bin/bash
+#
+# Locate string in C and assembler files
+
+find -type f -name \*.\[cS\] -exec grep -l $1 {} \;

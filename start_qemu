@@ -1,0 +1,12 @@
+qemu-system-x86_64 \
+	-monitor stdio \
+	-cpu SandyBridge \
+	-soundhw hda \
+	-machine accel=kvm \
+	-m 2048 \
+	-cdrom /mnt/windows/f/Downloads/Gentoo/install-amd64-minimal-20170420.iso \
+	-hda /work/grigole/kerneldev-gentoo \
+	-boot once=d,menu=off \
+	-nic tap,ifname=tap0,script=no,downscript=no \
+	-rtc base=localtime \
+	-name "Linux Kernel Debugging for Gentoo AMD64"

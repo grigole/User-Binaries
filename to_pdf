@@ -1,0 +1,5 @@
+#!/bin/bash
+#
+# to_pdf - convert file to PDF
+
+enscript "$1" --font=Courier-Bold@8/8 --margins=25:25:40:40 --truncate-lines --no-header --landscape -o - | ps2pdf - "$1.pdf"

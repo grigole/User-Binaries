@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+# start_printer - start hercjos in print/000F
+#
+
+# Send this printer to 1403.bitnet.systems
+#	Mar 10 2022 - Greg Rigole
+# cd ~/print/0002
+# hercjos -a localhost:1403 >~/print/hercjos_0002.out 2>&1 &
+cd ~/virtual1403-agent-v0.3.0_linux-amd64
+./virtual1403 >log.out 2>&1 &
+
+cd ~/print/000E
+hercjos -a localhost:1404 >~/print/hercjos_000E.out 2>&1 &
+
+cd ~/print/000F
+hercjos -a localhost:1405 >~/print/hercjos_000F.out 2>&1 &
+
+cd ~/print/030E
+hercjos -a localhost:1406 >~/print/hercjos_030E.out 2>&1 &

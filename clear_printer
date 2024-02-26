@@ -1,0 +1,5 @@
+#!/bin/bash
+
+find ~/print/ -name \*.prt -exec rm {} \;
+find ~/print/ -name \*.out -exec rm {} \;
+find ~/print/ -name \*.pdf -exec rm {} \;

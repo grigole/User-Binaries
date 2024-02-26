@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+#	term - start x3270 in the background with nohup
+#
+#	Sept 7 2020 - Greg Rigole
+#	- created
+
+nohup x3270 >/dev/null 2>&1 &

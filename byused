@@ -1,0 +1,3 @@
+#!/bin/bash
+
+df -h | head -n+1; df -h | tail -n+2 | sort $1 -h -k3

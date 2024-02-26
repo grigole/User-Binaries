@@ -1,0 +1,4 @@
+export PATH=../hercules/linux/64/bin:$PATH
+export LD_LIBRARY_PATH=../hercules/linux/64/lib:hercules/$system/$arch/lib/hercules:$LD_LIBRARY_PATH
+
+dasdcopy -z -a syscpk.3390 syscpk.200

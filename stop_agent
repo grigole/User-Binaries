@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Stop the SSH agent
+
+eval "$(ssh-agent -k)"

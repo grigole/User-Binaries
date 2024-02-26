@@ -1,0 +1,6 @@
+#!/bin/bash
+#
+# Start watch_emerge as root
+#
+
+sudo /root/bin/watch_emerge

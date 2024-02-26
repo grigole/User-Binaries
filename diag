@@ -1,0 +1,5 @@
+#/bin/bash
+
+export PATH=/mnt/windows/d/hercules/vm/turnkey/hercules/linux/64/cckddiag:$PATH
+export LD_LIBRARY_PATH=/mnt/windows/d/hercules/vm/turnkey/hercules/linux/64/cckddiag:$PATH
+cckdcdsk $1 $2 $3 $4
